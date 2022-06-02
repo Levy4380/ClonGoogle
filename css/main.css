@@ -1,0 +1,207 @@
+/*Estilo general*/
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*--------------------------*/
+/*----------Header----------*/
+/*--------------------------*/
+
+header{
+    width: 100%;
+    height: 60px;
+}
+
+header nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav .nav-rigth-section{
+    width: 250px;
+    height: auto;/* el navegador manejara la altura */
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+/*Links del header */
+nav .nav-rigth-section a {
+    margin-right: 5px;
+    margin-left: 5px;
+    color: #000000;
+    text-decoration: none;
+
+}
+
+nav .nav-rigth-section a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Icono apps*/
+nav .nav-rigth-section .material-icons{
+    border-radius: 50%;
+    margin: 10px;
+}
+
+nav .nav-rigth-section .material-icons:hover{
+    margin: 0;
+    background-color:#a7a7a7;
+    border: 10px solid #a7a7a7;
+    border-radius: 50%;
+}
+
+/* Img perfil*/
+nav .nav-rigth-section img{
+    border-radius: 50%;
+    margin: 4px;
+    vertical-align: middle;
+}
+
+nav .nav-rigth-section img:hover{
+    margin: 0;
+    border: 4px solid #a7a7a7;
+}
+
+/*--------------------------*/
+/*-----------Main-----------*/
+/*--------------------------*/
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+    
+}
+
+.main-search-bar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-search-bar .main-search-container{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(32 33 36 /0.2) ;
+    padding: 0 10px;
+    border-radius: 20px;
+    min-width: 272px;
+}
+.main-search-bar .main-search-container:hover{
+    box-shadow: 0px 1px 6px rgba(32 33 36 /0.5);
+    border: none;
+    margin: 1px;
+}
+
+.main-search-bar .main-search-input{
+    width:90%;
+    border: 0;  
+}
+
+
+.main-search-bar .main-search-input:focus-visible{
+    outline: none;/*quita el selector del texto */
+}
+
+.main-search-bar .icon{
+    text-decoration: none;
+    color: #a7a7a7;
+    margin-top: 3px;
+}
+
+/*-------------------------*/
+/*---------Botones---------*/
+/*-------------------------*/
+
+
+.botones{
+    max-width: 272px;
+    margin-bottom: 180px;
+}
+button{
+    margin-top: 20px;
+    border-radius: 5px;
+    height: 40px;
+    margin-left: 1px;
+    line-height: auto;
+    background-color:rgba(150, 150, 150,0.1);
+    border: none;
+    padding: 0;
+    
+}
+
+button p{
+    font-size: 13px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+button:hover{
+    border: 1px groove rgba(150, 150, 150, 0.415);
+}
+
+/*-----------------*/
+
+.space-empty{
+    height: 20rem;
+}
+
+/*-------------------------*/
+/*------Pie de Pagina------*/
+/*-------------------------*/
+
+footer{
+    display: flex;
+    flex-direction: column;  
+}
+
+.barra{
+    background-color: #f2f2f2;
+    display: flex;
+    padding: 0px;
+    list-style: none;
+    font-size:calc(1em + 1v);
+    width: 100%;
+    color: #70757a;
+    flex-wrap: nowrap;
+}
+
+.contacto{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .lista{
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    padding: 0px;
+}
+
+.pais p{
+    margin: 13px 10px;
+}
+
+footer .lista a{
+    margin: 0 10px;
+}
+
+footer .lista a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
